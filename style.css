@@ -1,0 +1,291 @@
+@charset "UTF-8";
+/* CSS Document */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root {
+    --color1: #FFD700;
+    --color2: #f9f9f9;
+    --color3: #FF69B4;
+    --color4: #0a0303;
+    --color5: #ff5722;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.6;
+    background-color: #f9f9f9; /* Adicionado um fundo neutro */
+}
+
+/* Header */
+header {
+    color: #0a0303;
+    text-align: center;
+    font-size: 1.5em;
+    font-weight: bold;
+    /* background-color: #FFD700; */
+    background-image: linear-gradient(to right, #FFD700, #FF69B4);
+   
+
+}
+
+/* Header Container */
+.header-container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #FFD700; 
+    padding: 1em;
+    background-image: linear-gradient(to right, #FFD700, #FF69B4);
+   
+   
+}
+
+.logo img {
+    width: 100%;
+    height: auto;
+    max-height: 600px;
+}
+
+/* Menu */
+.menu {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    gap: 2em;
+    padding: 2em;
+    background-color: #f9f9f9;
+    
+}
+
+.menu-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1em;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 300px;
+}
+
+.menu-item img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    /* border-radius: 80%; */
+    cursor: pointer;
+}
+
+
+.menu-item h3 {
+    margin: 0;
+    padding: 1em;
+    font-size: 1.2em;
+    background-color: #ff5722;
+    color: #fff;
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+}
+
+.menu-item p {
+    padding: 1em;
+    font-size: 1em;
+    margin: 0;
+    text-align: center;
+    font-weight: bold;
+}
+
+/* Conteúdo */
+.conteudo {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #FFD700;
+    padding: 1em;
+    background-image: linear-gradient(to right, #FFD700, #FF69B4);
+    position: sticky; 
+    top: 0;
+    z-index: 100; /* Um valor alto para garantir que o h1 fique acima */
+    padding: 10px;
+}
+
+.conteudo div {
+    margin-bottom: 10px;
+}
+
+.conteudo a {
+    text-decoration: none;
+    color: #000;
+    font-weight: bold;
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: color 0.3s, background-color 0.3s;
+    
+}
+
+.conteudo a:hover {
+    text-decoration: underline;
+    color: #fff;
+    background-color: rgb(104, 104, 241);
+}
+
+/* WhatsApp Button */
+.whatsapp-button {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #25d366;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.whatsapp-button:hover {
+    transform: scale(1.1);
+}
+
+.whatsapp-button img {
+    width: 30px;
+    height: 30px;
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1em;
+    font-weight: bold;
+}
+
+/* Redes Sociais */
+.redes-sociais {
+    display: flex;
+    justify-content: space-between;
+    gap: 1em;
+    padding: 1em; 
+    background-color: #333333;
+    color: #fff;
+
+}
+
+.redes-sociais iframe {
+    width: 200px;
+    height: 200px;
+}
+
+.redes img {
+    display: flex;
+    align-items: center;
+   
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    transition: transform 0.3s ease;
+}
+
+.redes img:hover {
+    transform: scale(1.2);
+}
+/* Responsividade */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 2em;
+    }
+
+    p {
+        font-size: 1em;
+    }
+
+    .header-container,
+    .conteudo {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .conteudo a {
+        padding: 8px 16px;
+        font-size: 0.9em;
+    }
+
+    .menu {
+        gap: 1em;
+    }
+    
+    
+    }
+
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 1.8em;
+    }
+
+    p {
+        font-size: 0.9em;
+    }
+
+    .whatsapp-button {
+        width: 50px;
+        height: 50px;
+    }
+
+    .whatsapp-button img {
+        width: 25px;
+        height: 25px;
+    }
+    
+   
+}
+
+.whatsapp-button .cart-counter {
+    position: absolute;
+    top: -10px;
+    right: -10px; 
+    background-color: red;
+    color: white;
+    font-size: 12px;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+}
+.menu-foto { 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1em;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+    }
+    .menu-foto img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    /* border-radius: 50%; */
+    cursor: pointer;
+    }
+
