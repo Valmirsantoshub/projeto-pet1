@@ -182,16 +182,21 @@ footer {
     padding: 1em; 
     background-color: #333333;
     color: #fff;
-   
 
+}
+.redes-sociais div {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
 }
 
 .redes-sociais iframe {
     width: 200px;
     height: 200px;
+    
 }
 
-.redes img {
+.redes img{
     display: flex;
     align-items: center;
    
