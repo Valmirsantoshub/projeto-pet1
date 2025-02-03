@@ -20,7 +20,7 @@ document.addEventListener("DOMContentLoaded", () => {
         });
 
         cartText += `\nTotal: R$ ${total.toFixed(2)}`;
-        cartButton.href = `https://api.whatsapp.com/send?phone=5515991608575&text=${encodeURIComponent(cartText)}`;
+        cartButton.href = `https://api.whatsapp.com/send?phone=5511966087062&text=${encodeURIComponent(cartText)}`;
 
         // Atualiza o contador de itens
         cartCounter.textContent = cart.length;

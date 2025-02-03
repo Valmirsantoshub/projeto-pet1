@@ -26,10 +26,10 @@ header {
     text-align: center;
     font-size: 1.5em;
     font-weight: bold;
+    font-family: 'Times New Roman', Times, serif;
     /* background-color: #FFD700; */
     background-image: linear-gradient(to right, #FFD700, #FF69B4);
    
-
 }
 
 /* Header Container */
